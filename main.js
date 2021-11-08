@@ -9,14 +9,6 @@ class Calculator{
         let part2 = ''
         for(let i of digits){
             i.addEventListener('click', (event) => {
-                // if((this.equalCount > 0 && !/[+\-\✕\÷]/i.test(input.value) || (this.equalCount > 0 && /[+\-\✕\÷]/i.test(input.value)))){
-                //     if(/[+\-\✕\÷]/i.test(input.value) && input.value.match(/[+\-\✕\÷]/g).length > 1) input.value = input.value
-                //     else if(!/[+\-\✕\÷]/i.test(input.value)) input.value = input.value
-                //     else{
-                //         input.value = null
-                //         this.equalCount = 0
-                //     }
-                // }
                 if(this.equalCount > 0 && !/[+\-\✕\÷\.]/i.test(input.value[input.value.length - 1])){
                     input.value = null
                     this.equalCount = 0
@@ -123,51 +115,3 @@ let sign = document.querySelectorAll('.sign')
 let dot = document.querySelector('.dot')
 let equal = document.querySelector('.equal')
 let calc = new Calculator(nums, clear, sign, dot, equal)
-// let i = '45+'
-// console.log(/[+\-\✕\÷]/g.test(i[i.length-1]));
-// if(/[+\-\✕\÷]/g.test(i[i.length-1])){
-//     console.log('thats true');
-//     // i = i.replace(/[+\-\✕\÷]/$, '')
-//     i += '0.'
-// } 
-// console.log(i);
-// i += i[i.length - 1].replace('5', '-')
-// i = i.replace(/0$/, '8')
-// console.log(i);
-// let i = '-45✕0.'
-// i = i.replace('✕', '*')
-// i = i.replace('÷', '/')
-// console.log(i);
-// if(i.match(/[+\-\✕\÷]/g).length > 1) console.log(eval(i));
-// console.log(i[i.length - 1] == (i.match(/[+\-\✕\÷]/g)[1] + ''))
-// console.log(i.match(/[+\-\✕\÷]/g).length);
-// console.log(i.match(/[+\-\✕\÷]/g));
-// console.log(i.split(i.match(/[+\-\✕\÷]/g)));
-
-// i = i.replace('.', '+')
-// console.log(i);
-// console.log('' !== 0);
-// console.log('89+'.split('+'));
-
-// let i = '2.3+.'
-// i = i.split('').reverse().join('').replace('.', '0.').split('').reverse().join('')
-// console.log(i);
-// console.log(i.lastIndexOf('.'));
-
-// console.log((/[0-9]/g.test('')));
-
-// console.log(typeof +('89+1'.split('89+1'.match(/[+\-\✕\÷]/g))[0]));
-
-// let i = '89÷'
-// console.log(i[i.length - 1] == i.match(/[+\-\✕\÷]/g));
-
-// console.log('89+1'.indexOf('89+1'.match(/[+\-\✕\÷]/g) + ''));
-// let i = '89'
-// console.log(/[+\-\✕\÷]/g.test(i));
-
-
-
-
-// console.log('45✕34'.split('45✕34'.match(/[+\-\✕\÷]/g)));
-
-// // console.log(/[+\-\✕\÷]/i.test('helloworld'));
