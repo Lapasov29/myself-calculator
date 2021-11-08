@@ -6,7 +6,6 @@ class Calculator{
         this.clearDisplay = this.clear(clear)
     }
     rendering(digits, mathOperations, dot, compute){
-        let part2 = ''
         for(let i of digits){
             i.addEventListener('click', (event) => {
                 if(this.equalCount > 0 && !/[+\-\✕\÷\.]/i.test(input.value[input.value.length - 1])){
